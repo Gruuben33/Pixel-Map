@@ -18,8 +18,3 @@ function drawGrid(r) {
         }
     }
 }
-
-function updatePosition() {
-    nextX += 1
-    nextY += 1
-}
