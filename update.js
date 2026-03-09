@@ -4,12 +4,15 @@ function updatePosition() {
 }
 
 function changeDirection() {
-    if (nextX == 0 || nextX == cols-1 || nextY == 0 || nextY == rows-1) {
-        direction *= -1
+    if (nextPos.x == 0 || nextPos.x == cols-1) {
+        directionX *= -1
+    }
+    if (nextPos.y == 0 || nextPos.y == rows-1) {
+        directionY *= -1
     }
 }
 
 function move() {
-    nextX += direction
-    nextY += direction
+    nextPos.x += directionX
+    nextPos.y += directionY
 }

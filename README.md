@@ -7,5 +7,5 @@
 - [x] specified shapes are different colours
 - [x] the amount of shapes that take up the grid increase when the size/radius decreases
 - [x] specified circle is another colour and moves spots
-- [ ] make movement linear and "bounce" off borders
-- [ ] use other shapes
+- [x] make movement linear and "bounce" off borders
+- [x] use other shapes

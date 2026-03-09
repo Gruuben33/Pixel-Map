@@ -1,6 +1,5 @@
-function drawGrid(r) {
+function drawGrid() {
     let alreadyDrawn = false
-    d = r*2
     rows = (windowHeight - windowHeight % d) / d
     cols = (windowWidth - windowWidth % d) / d
     fill('#ff5555')
@@ -9,11 +8,11 @@ function drawGrid(r) {
             if (x == 0 || y == 0 || x == cols-1 || y == rows-1) {
                 fill('#5555ff')
             }
-            else if (x == nextX && y == nextY && alreadyDrawn == false) {
+            else if (x == nextPos.x && y == nextPos.y && alreadyDrawn == false) {
                 fill('#55ff55')
                 alreadyDrawn = true
             }
-            circle(x*d+r, y*d+r, d)
+            square(x * d + r, y * d + r, d)
             fill('#ff5555')
         }
     }
